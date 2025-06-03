@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: "poppins",sans-serif;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    padding: 2rem 7%;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+}
+.logo img{
+    width: 85px;
+}
+nav a{
+    margin-right: 20px;
+    color: black;
+
+}
+
+.section_container{
+    padding: 2rem 7%;
+}
+
+.content-home{
+    /* display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.img img{
+    max-width: 100%;
+    width: 500px;
+}
+
+.text-home span{
+    color: #FF9500;
+    font-weight: 500;
+}
+
+.text-home h2{
+    font-size: 5rem;
+    font-weight: 400;
+}
+
+.text-home p{
+    margin-bottom: 40px;
+}
+
+.text-home .cta-1{
+    background-color: #FF9500;
+    color: white;
+    padding: 10px 12px;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+.text-home .cta-2{
+    border: 1px solid #FF9500;
+    color: black;
+    padding: 10px 12px;
+    border-radius: 5px;
+}
+
+#layanan{
+        background-color: #EFF3FF;
+}
+
+.content-layanan{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+    gap: 20px;
+}
+
+.card img{
+    margin-bottom: 20px;
+}
+
+.card h4{
+    margin-bottom: 20px;
+}
+
+.content-about{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.content-about .text-about h2{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.content-about .img img{
+    width: 100%;
+    margin-top: 40px;
+}
+
+.text-about h2{
+    font-size: 4rem;
+    font-weight: 400;
+}
+
+.text-about span{
+    color: #FF9500;
+    font-weight: 500;
+}
+
+.content-terpercaya{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 20px;
+}
+
+.content-terpercaya .text .title{
+    color: #FF9500;
+}
+
+.content-terpercaya .text h2{
+    font-size: 4rem;
+    margin-bottom: 20px;
+}
+
+.content-terpercaya .text p{
+    margin-bottom: 20px;
+}
+
+.list-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.list-container .list-1 h4,
+.list-container .list-2 h4,
+.list-container .list-3 h4{
+    margin-bottom: 20px;
+}
+
+.list-container .list-1 h4 i,
+.list-container .list-2 h4 i,
+.list-container .list-3 h4 i{
+    color: #FF9500;
+    margin-right: 10px;
+}
+
+/* Pricing */
+.header{
+    text-align: center;
+    margin-bottom: 2;
+}
+.sub-header {
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+  color: #ccc;
+}
+
+.pricing {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+}
+
+.pricing .card {
+    width: 500px;
+    height: 75vh;
+  padding: 3rem 2rem;
+  background-color: #ffb54e;
+  display: flex;
+  flex-direction: column;
+  border: 2px solid transparent;
+  border-radius: 15px;
+  transition: all 0.3s ease;
+}
+
+.pricing .card:hover {
+  background-color: #FF9500;
+  border-color: #fff;
+}
+
+.pricing .card .content {
+  flex: 1;
+  margin-bottom: 2rem;
+}
+
+.pricing .card h4 {
+  margin-bottom: 1rem;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.pricing .card h3 {
+  color: #fff;
+  margin-bottom: 6rem;
+  font-size: 2rem;
+  font-weight: 600;
+  border-bottom: 2px solid #fff;
+
+}
+
+.pricing .card p {
+  color: #fff;
+  margin: 12px auto;
+  font-size: 25px;
+}
+
+.pricing .card p i {
+  color: #ccc;
+  font-size: 1.2rem;
+  margin-right: 0.5rem;
+}
+
+.btn {
+  padding: 20px 10px;
+  border-radius: 5px;
+  background-color: #EE7F50;
+  color: rgb(0, 0, 0);
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  transition: all 0.3s ease;
+  border: none;
+}
+
+.btn:hover {
+  border: 1px solid #EE7F50;
+  color: #000;
+}
+
+#kontak{
+    background-color: #ffb54e;
+    margin-top: 100px;
+}
+
+.content-kontak{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea{
+    padding: 15px;
+    margin: 20px 0;
+    width: 50%;
+}
+
+button{
+    display: flex;
+    justify-content: center;
+    width: 15%;
+    padding: 10px 20px;
+}
+
+.icon-links {
+  display: flex;
+  gap: 20px;
+}
+
+.social h2{
+    margin-bottom: 10px;
+}
+
+.social p{
+    margin-bottom: 25px;
+}
+
+#about,
+#layanan,
+#harga,
+#kontak{
+    scroll-margin-top: 100px;
+}
+
+#harga .title{
+    text-align: center;
+    color: #FF9500;
+    margin-bottom: 20px;
+}
+.icon-links{
+    display: flex;
+    gap: 10px;
+    font-size: 30px;
+}
+.fb{
+    color: blue;
+}
+.wa{
+    color: greenyellow;
+}
+.ig{
+    color: palevioletred;
+}
